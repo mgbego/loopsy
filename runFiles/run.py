@@ -46,7 +46,8 @@ def try_parse(text, start_rule, examples, messages, section_name):
 
 @backend.route('/')
 def index():
-   return open('index.html').read()
+   #return open('index.html').read()
+   return open(os.path.join(os.path.dirname(__file__), 'index.html')).read()
 
 @backend.route('/style.css')
 def styles():
