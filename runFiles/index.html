@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Interface</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+</head>
+<body>
+<h1>Loopsy</h1>
+<h2>a loop invariant correctness checker for the While language</h2>
+<div class="main-container">
+  <div class="input-box">
+    <div class="box-buttons">
+      <button onclick="runCode()">Run>></button>
+    </div>
+    <div class="assume-box">
+      <label>Assume</label>
+      <div id="assume-editor"></div>
+    </div>
+    <div class="statement-box">
+      <!--<label>Program</label>-->
+      <div id="statement-editor"></div>
+    </div>
+    <div class="assert-box">
+      <label>Assert</label>
+      <div id="assert-editor"></div>
+    </div>
+  </div>
+  <div class="output-box">
+    <div class="box-buttons">
+      <button onclick="clearOutput()">Clear>></button>
+    </div>
+    <textarea placeholder="Programme Output"></textarea>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

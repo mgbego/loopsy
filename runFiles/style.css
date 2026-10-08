@@ -1,0 +1,140 @@
+
+
+body {background-color: #051023;}
+h1   {color: #bef0fc;}
+h2   {color: #bef0fc;}
+p    {color: #bef0fc;}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+  min-height: 400px;
+  background-color: #051023;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  border: 1px solid #bef0fc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.output-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #bef0fc;
+  padding: 10px;
+  min-height: 400px;
+  box-sizing:border-box;
+  background-color: #bef0fc;
+}
+
+.assume-box, .assert-box {
+  flex: 0 0 80px;
+  background-color: #bef0fc;
+  border: 1px solid #bef0fc;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.statement-box {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: #bef0fc;
+  border: 1px solid #bef0fc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.output-box textarea {
+  flex: 1;
+  width: 100%;
+  background-color: transparent;
+  color: #000000;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  font-size:medium
+}
+
+h1 { text-align: center; }
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: normal;
+}
+
+.box-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #051023;
+}
+
+button {
+  color: #bef0fc;
+  background-color: #051023;
+  border: 1px solid #bef0fc;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #18b71d;
+  color: #051023;
+  width: 85px; 
+  height: 42.5px;
+}
+
+.CodeMirror {
+  height: 100%;
+  background-color: #bef0fc !important;
+  font-family: monospace;
+  font-size: large;
+  color: #000000;
+}
+
+.CodeMirror-gutters {
+  background-color: #bef0fc !important;
+  border-right: 1px solid #bef0fc;
+}
+
+.CodeMirror-scroll {
+  background-color: #bef0fc !important;
+}
+
+.cm-keyword {color: #0606ff !important; font-weight: bold;}
+.cm-number {color: #ff6600 !important;}
+.cm-operator {color: #1bb7eb !important;}
+.cm-tf {color:#ff0e0e !important; font-weight: bold;}
+
+.cm-variable {color: #008000 !important;} 
+.cm-punctuation {color: #ff62ea !important;}
+
+.output-box .box-buttons {
+  background-color: #051023;
+  border: 1px solid #bef0fc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.CodeMirror .line-error {
+  background-color: rgba(255, 0, 0, 0.25) !important;
+}
